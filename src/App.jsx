@@ -1,7 +1,7 @@
 import Nav from "./components/Nav";
 import {
   Hero,
-  Popular,
+  PopularProducts,
   SuperQuality,
   Services,
   SpecialOffers,
@@ -19,7 +19,7 @@ export default function App() {
           <Hero />
         </section>
         <section className="padding">
-          <Popular />
+          <PopularProducts />
         </section>
         <section className="padding">
           <SuperQuality />

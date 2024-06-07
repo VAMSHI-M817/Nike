@@ -4,6 +4,7 @@ import { statistics, shoes } from "../constants/index";
 import { bigShoe1 } from "../assets/images";
 import ShoeCard from "../components/ShoeCard";
 import { useState } from "react";
+
 const Hero = () => {
   const [bigShoeImage, setBigShoeImg] = useState(bigShoe1);
 
@@ -41,7 +42,7 @@ const Hero = () => {
 
         <div className="flex justify-start  items-start flex-wrap w-full mt-20 gap-16">
           {statistics.map((stat) => (
-            <div key={stat}>
+            <div key={stat.label}>
               <p className="text-4xl font-montserrat font-bold">{stat.value}</p>
               <p className="leading-7 text-slate-gray font-montserrat">
                 {stat.label}
@@ -60,10 +61,10 @@ const Hero = () => {
         />
         <div className="flex absolute sm:gap-6 gap-4 -bottom-[5%] sm:left-[10%] max-sm:px-6">
           {shoes.map((shoe) => (
-            <div key={shoe}>
+            <div key={shoe.id}>
               <ShoeCard
                 imgUrl={shoe}
-                changeBigShoeImage={(shoe) => setBigShoeImg(shoe)}
+                changeBigShoeImage={setBigShoeImg}
                 bigShoeImage={bigShoeImage}
               />
             </div>

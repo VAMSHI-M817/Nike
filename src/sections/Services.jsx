@@ -1,5 +1,15 @@
-const Services = () => {
-  return <div>Services</div>;
-};
+import ServiceCards from '../components/ServiceCards'
+import {services} from '../constants/index'
 
-export default Services;
+
+const Services = () => {
+  return (
+    <section className="max-container flex justify-center flex-wrap gap-9  ">
+      {services.map((service)=>(
+        <ServiceCards key={service.label} {...service}/>
+      ))}
+    </section>
+  )
+}
+
+export default Services
