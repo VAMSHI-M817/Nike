@@ -25,16 +25,14 @@ const Footer = () => {
         <div className="flex flex-1 justify-between lg:gap-10 gap-20 flex-wrap">
           {footerLinks.map((section) => (
             <div key={section}>
-              <h4 className="text-white">
-                {section.title}
-                <ul>              </h4>
-
-                  {section.links.map((link) => (
-                    <li>
-                      <a href="/">{link.name}</a>
-                    </li>
-                  ))} 
-                </ul>
+              <h4 className="text-white">{section.title} </h4>
+              <ul className="text-white">
+                {section.links.map((link) => (
+                  <li>
+                    <a href="/">{link.name}</a>
+                  </li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>
