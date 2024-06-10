@@ -34,6 +34,8 @@ const SuperQuality = () => {
       <div className="flex flex-1 justify-center items-center">
         <img
           src={shoe8}
+          height={449}
+          width={780}
           alt="shoe"
           className=" relative  shadow-md rounded-xl p-5 hover:shadow-sm transition-all border border-slate-100"
         />
