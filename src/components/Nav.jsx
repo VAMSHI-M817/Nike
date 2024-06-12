@@ -22,7 +22,7 @@ const Nav = () => {
           ))}
         </ul>
         <div className="hidden max-lg:block">
-          <img src={hamburger} alt="hamburger" height={25} width={25} />
+          <i class="fa-solid fa-bars fa-xl"></i>
         </div>
       </nav>
     </header>
