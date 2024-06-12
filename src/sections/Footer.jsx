@@ -17,7 +17,7 @@ const Footer = () => {
           <div className="flex items-center gap-5 mt-8">
             {socialMedia.map((icon) => (
               <div
-                className="flex justify-center items-center w-12 h-12 bg-white rounded-full"
+                className="flex justify-center items-center w-12 h-12 bg-white rounded-full hover:bg-coral-red"
                 key={icon.alt}
               >
                 <img src={icon.src} alt={icon.alt} width={24} height={24} />
@@ -48,7 +48,7 @@ const Footer = () => {
           <img src={copyrightSign} alt="logo" width={20} height={20} />
           <p>Copyright. All rights reserved.</p>
         </div>
-        <p className="text-xl font-montserrat font-bold">
+        <p className="bg-clip-text text-transparent text-xl font-montserrat font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ">
           Created by @VAMSHI MAREPU
         </p>
       </div>
